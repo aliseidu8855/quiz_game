@@ -65,7 +65,7 @@ class QuizGame:
 
         timer = 10  # Set the timer
         self.time_up = False
-        thread = f"\n{threading.Thread(target=countdown)}"
+        thread = threading.Thread(target=countdown)
         thread.start()
 
         print(question["question"])
